@@ -10,6 +10,7 @@ func (p *Proxy) registerBuiltinCommands() []string {
 		p.command.Register(newServerCmd(p)).Name(),
 		p.command.Register(newGlistCmd(p)).Name(),
 		p.command.Register(newSendCmd(p)).Name(),
+		p.command.Register(newHubCmd(p)).Name(),
 	}
 }
 

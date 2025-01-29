@@ -7,14 +7,14 @@ config:
   # Registers servers with the proxy by giving the address of backend server a custom reference name.
   servers:
     # Server name: server address
-    server1: localhost:25566
+    hub: localhost:25566
     server2: localhost:25567
     server3: localhost:25568
     server4: localhost:25569
   # The list of servers to try (ordered) to connect a player to
   # upon login or fallback when a player is kicked from a server.
   try:
-    - server1
+    - hub
     - server2
     - server3
     - server4
